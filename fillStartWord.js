@@ -6,8 +6,8 @@ function fillStartWord(startWord, word) {
     return undefined
   }else if(word == undefined){
     return undefined
-  }else if(startWord == word){
-    return "word"
+  }else if(word.includes(startWord)){
+    return word
   }else 
     return startWord+word
 }
